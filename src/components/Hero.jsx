@@ -41,7 +41,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/system.docx"
+              href="/CV.pdf.docx"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 border border-gray-500 hover:border-blue-500 rounded-xl transition duration-300 font-medium"
