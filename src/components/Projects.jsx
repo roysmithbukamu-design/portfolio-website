@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import {
-  FaCode,
+  FaBullseye,
   FaRobot,
   FaGamepad,
   FaGlobe
@@ -13,18 +13,18 @@ const projects = [
     icon: <FaGamepad />,
     status: "Completed",
     description:
-      "A C-based command-line game where users guess a randomly generated number within a given range.",
+      "A lightweight, deterministic number-guessing engine built entirely in procedural C to demonstrate foundational low-level programming concepts within a command-line interface (CLI). The application implements optimized binary-search feedback loops, robust buffer clearing to handle malicious user input gracefully, and efficient memory management to deliver a lightning-fast, terminal-native user experience.",
     tech: ["C"],
     github: "https://github.com/roysmithbukamu-design/number-guessing-game-c",
     demo: null,
   },
   {
-    title: "Calculator in C",
-    icon: <FaCode />,
-    status: "Completed",
+    title: "FocusFlow Productivity App",
+    icon: <FaBullseye />,
+    status: "In Progress",
     description:
-      "A simple calculator using C that performs arithmetic operations using switch statements.",
-    tech: ["C"],
+      "A context-aware productivity engine that automatesphysical and digital environments into distraction free-zones using geofencing,real-time device restriction and smart-home hardware triggers.",
+    tech: ["Typescript", "React", "Tailwind CSS"],
     github: "https://github.com/roysmithbukamu-design",
     demo: null,
   },
@@ -33,7 +33,7 @@ const projects = [
     icon: <FaGlobe />,
     status: "Completed",
     description:
-      "A modern portfolio built with React, Tailwind CSS and Framer Motion.",
+      "A high-performance, single-page portfolio engineered with React and Tailwind CSS to showcase technical expertise through a clean, developer-centric interface. Leveraging Framer Motion, the site features fluid, physics-based transitions and micro-interactions that elevate the user experience without sacrificing performance or accessibility..",
     tech: ["React", "Tailwind", "Framer Motion"],
     github: "https://github.com/roysmithbukamu-design/portfolio-website",
     demo: null,

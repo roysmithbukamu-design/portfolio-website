@@ -2,51 +2,87 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center px-6"
+    >
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-      {/* Background Glow */}
-      <div className="absolute w-96 h-96 bg-blue-500/20 blur-[150px] rounded-full top-20 left-20"></div>
+        {/* Left Side */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <p className="text-blue-400 text-lg mb-4">
+            Hello, I'm
+          </p>
 
-      <div className="absolute w-96 h-96 bg-purple-500/20 blur-[150px] rounded-full bottom-20 right-20"></div>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            Roysmith Bukamu
+          </h1>
 
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="text-center relative z-10"
-      >
+          <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
+            Software Engineering Student • Full-Stack Developer • AI Enthusiast
+          </h2>
 
-        <p className="text-blue-400 mb-4 text-lg">
-          Hello, I'm
-        </p>
+          <p className="text-gray-400 text-lg leading-relaxed mb-8">
+            Building innovative web applications and AI-powered solutions that
+            solve real-world problems. Passionate about technology, software
+            development, and continuous learning.
+          </p>
 
-        <h1 className="text-6xl md:text-8xl font-extrabold mb-4 bg-gradient-to-r from-white via-blue-300 to-purple-400 bg-clip-text text-transparent">
-          Roysmith Bukamu
-        </h1>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl transition duration-300 font-medium"
+            >
+              View Projects
+            </a>
 
-        <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
-          Software Engineering Student • Full-Stack Developer • AI Enthusiast
-        </h2>
+            <a
+              href="/RoysmithBukamu_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="px-6 py-3 border border-gray-500 hover:border-blue-500 rounded-xl transition duration-300 font-medium"
+            >
+              Download CV
+            </a>
+          </div>
+        </motion.div>
 
-        <p className="max-w-2xl mx-auto text-gray-400 text-lg mb-8">
-          Building innovative web applications and AI-powered
-          solutions that solve real-world problems.
-        </p>
+        {/* Right Side - Profile Image */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex justify-center"
+        >
+          <div className="relative">
+            <img
+              src="/profile.jpeg"
+              alt="Roysmith Bukamu"
+              className="
+                w-72
+                h-72
+                md:w-96
+                md:h-96
+                object-cover
+                rounded-full
+                border-4
+                border-blue-500
+                shadow-[0_0_50px_rgba(59,130,246,0.5)]
+                hover:scale-105
+                transition-all
+                duration-500
+              "
+            />
 
-        <div className="flex flex-wrap justify-center gap-4">
+            <div className="absolute inset-0 rounded-full border border-blue-400 animate-pulse"></div>
+          </div>
+        </motion.div>
 
-          <button className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition">
-            View Projects
-          </button>
-
-          <button className="px-6 py-3 rounded-xl border border-gray-600 hover:border-blue-500 transition">
-            Download CV
-          </button>
-
-        </div>
-
-      </motion.div>
-
+      </div>
     </section>
   );
 }

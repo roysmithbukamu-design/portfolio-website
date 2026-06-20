@@ -1,3 +1,5 @@
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 import {
   FaGithub,
   FaLinkedin,
@@ -9,6 +11,30 @@ import {
 } from "react-icons/fa6";
 
 export default function Contact() {
+  const form = useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_bejihzr",
+      "template_nq4hzeg",
+      form.current,
+      "-qqj8CadjXR3xy-HO"
+    )
+    .then(
+      () => {
+        alert("Message sent successfully!");
+      },
+      (error) => {
+        alert("Failed to send message.");
+        console.log(error);
+      }
+    );
+
+  e.target.reset();
+};
   return (
     <section
       id="contact"
@@ -117,7 +143,7 @@ export default function Contact() {
     Send Me a Message
   </h3>
 
-  <form className="space-y-6">
+  <form ref={form} onSubmit={sendEmail} className="space-y-6">
 
     <input
       type="text"
@@ -133,7 +159,7 @@ export default function Contact() {
 
     <textarea
       rows="5"
-      placeholder="Your Message"
+      placeholder="message"
       className="w-full p-4 rounded-xl bg-black/30 border border-white/10 focus:border-blue-500 outline-none"
     ></textarea>
 
