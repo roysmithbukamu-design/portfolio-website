@@ -41,12 +41,12 @@ export default function Hero() {
             </a>
 
             <a
-              href="/RoysmithBukamu_CV.pdf"
+              href="/system.docx"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="px-5 py-3 border border-gray-500 hover:border-blue-500 rounded-xl transition duration-300 font-medium"
             >
-              Download CV
+              View CV
             </a>
           </div>
         </motion.div>
