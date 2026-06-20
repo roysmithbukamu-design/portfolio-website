@@ -35,18 +35,18 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="px-5 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl transition duration-300 font-medium"
+              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl transition duration-300 font-medium"
             >
               View Projects
             </a>
 
             <a
-              href="/CV.pdf.docx"
+              href="/CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 border border-gray-500 hover:border-blue-500 rounded-xl transition duration-300 font-medium"
+              className="px-6 py-3 border border-gray-500 hover:border-blue-500 rounded-xl transition duration-300 font-medium"
             >
-              View CV
+              Download CV
             </a>
           </div>
         </motion.div>
