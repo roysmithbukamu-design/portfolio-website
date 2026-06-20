@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Portfolio Website",
     icon: <FaGlobe />,
-    status: "In Progress",
+    status: "Completed",
     description:
       "A modern portfolio built with React, Tailwind CSS and Framer Motion.",
     tech: ["React", "Tailwind", "Framer Motion"],
