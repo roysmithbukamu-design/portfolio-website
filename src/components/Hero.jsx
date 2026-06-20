@@ -4,9 +4,9 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-6"
+      className="min-h-screen flex items-center pt-24 md:pt-0"
     >
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
         {/* Left Side */}
         <motion.div
@@ -18,12 +18,12 @@ export default function Hero() {
             Hello, I'm
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="text-4xl md:text-7xl font-bold leading-tight mb-6">
             Roysmith Bukamu
           </h1>
 
-          <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
-            Software Engineering Student • Full-Stack Developer • AI Enthusiast
+          <h2 className="text-xl md:text-2xl text-gray-250 mb-6">
+            Software Developer | AI Enthusiast | Problem Solver
           </h2>
 
           <p className="text-gray-400 text-lg leading-relaxed mb-8">
@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl transition duration-300 font-medium"
+              className="px-5 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl transition duration-300 font-medium"
             >
               View Projects
             </a>
@@ -44,7 +44,7 @@ export default function Hero() {
               href="/RoysmithBukamu_CV.pdf"
               target="_blank"
               rel="noreferrer"
-              className="px-6 py-3 border border-gray-500 hover:border-blue-500 rounded-xl transition duration-300 font-medium"
+              className="px-5 py-3 border border-gray-500 hover:border-blue-500 rounded-xl transition duration-300 font-medium"
             >
               Download CV
             </a>

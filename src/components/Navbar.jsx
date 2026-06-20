@@ -6,7 +6,7 @@ export default function Navbar() {
         <img
   src="/logo.jpeg"
   alt="RoysmithDev Logo"
-  className="h-8 w-auto"
+  className="h-6 w-auto"
 />
 
         <div className="hidden md:flex gap-8">

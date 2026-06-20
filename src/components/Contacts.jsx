@@ -145,32 +145,32 @@ const sendEmail = (e) => {
 
   <form ref={form} onSubmit={sendEmail} className="space-y-6">
 
-    <input
-      type="text"
-      placeholder="Your Name"
-      className="w-full p-4 rounded-xl bg-black/30 border border-white/10 focus:border-blue-500 outline-none"
-    />
+  <input
+    type="text"
+    name="Your Name"
+    placeholder="Your Name"
+    className="w-full p-4 rounded-xl bg-black/30 border border-white/10 focus:border-blue-500 outline-none"
+  />
 
-    <input
-      type="email"
-      placeholder="Your Email"
-      className="w-full p-4 rounded-xl bg-black/30 border border-white/10 focus:border-blue-500 outline-none"
-    />
+  <input
+    type="email"
+    name="Your Email"
+    placeholder="Your Email"
+    className="w-full p-4 rounded-xl bg-black/30 border border-white/10 focus:border-blue-500 outline-none"
+  />
 
-    <textarea
-      rows="5"
-      placeholder="message"
-      className="w-full p-4 rounded-xl bg-black/30 border border-white/10 focus:border-blue-500 outline-none"
-    ></textarea>
+  <textarea
+    name="message"
+    rows="5"
+    placeholder="message"
+    className="w-full p-4 rounded-xl bg-black/30 border border-white/10 focus:border-blue-500 outline-none"
+  ></textarea>
 
-    <button
-      type="submit"
-      className="px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700 transition"
-    >
-      Send Message
-    </button>
+  <button type="submit"
+  className="px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700 transition"
+    >Send Message</button>
 
-  </form>
+</form>
 
 </div>
     </section>
