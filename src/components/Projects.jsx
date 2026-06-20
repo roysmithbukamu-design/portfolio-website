@@ -15,7 +15,7 @@ const projects = [
     description:
       "A C-based command-line game where users guess a randomly generated number within a given range.",
     tech: ["C"],
-    github: "https://github.com/roysmithbukamu-design",
+    github: "https://github.com/roysmithbukamu-design/number-guessing-game-c",
     demo: null,
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     description:
       "A modern portfolio built with React, Tailwind CSS and Framer Motion.",
     tech: ["React", "Tailwind", "Framer Motion"],
-    github: "https://github.com/roysmithbukamu-design",
+    github: "https://github.com/roysmithbukamu-design/portfolio-website",
     demo: null,
   },
   {
