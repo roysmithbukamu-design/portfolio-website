@@ -23,7 +23,7 @@ const projects = [
     icon: <FaBullseye />,
     status: "In Progress",
     description:
-      "A context-aware productivity engine that automatesphysical and digital environments into distraction free-zones using geofencing,real-time device restriction and smart-home hardware triggers.",
+      "A context-aware productivity engine that automates physical and digital environments into distraction free-zones using geofencing,real-time device restriction and smart-home hardware triggers.",
     tech: ["Typescript", "React", "Tailwind CSS"],
     github: "https://github.com/roysmithbukamu-design",
     demo: null,

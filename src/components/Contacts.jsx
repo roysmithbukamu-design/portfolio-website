@@ -73,7 +73,7 @@ const sendEmail = (e) => {
   </p>
 
   <p className="text-gray-400 mt-2">
-    Location: Kenya
+    Location: Nairobi, Kenya
   </p>
 </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
