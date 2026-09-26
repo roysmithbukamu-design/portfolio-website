@@ -7,11 +7,6 @@ export default function Footer() {
           © {new Date().getFullYear()} Roysmith Bukamu.
           All rights reserved.
         </p>
-
-        <p className="text-gray-500 mt-4 md:mt-0">
-          Built with React, Tailwind CSS & Framer Motion
-        </p>
-
       </div>
     </footer>
   );
