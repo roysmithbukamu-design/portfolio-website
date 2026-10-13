@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roysmithdev.vercel.app/sitemap.xml
