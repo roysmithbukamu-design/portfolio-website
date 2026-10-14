@@ -1,12 +1,21 @@
 @import "tailwindcss";
 
+/* Enable class-controlled dark mode in Tailwind CSS v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: Inter, sans-serif;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+html.dark body {
   background: #0a0a0a;
   color: white;
-  font-family: Inter, sans-serif;
 }

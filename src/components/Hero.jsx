@@ -5,15 +5,13 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative isolate flex min-h-screen items-center overflow-hidden px-6 pb-16 pt-28 sm:pt-32 md:pt-24"
+      className="relative isolate flex min-h-screen items-center overflow-hidden bg-slate-50 px-6 pb-16 pt-28 transition-colors duration-300 dark:bg-[#0a0a0a] sm:pt-32 md:pt-24"
     >
       {/* Background glow effects */}
       <div className="pointer-events-none absolute -left-32 top-1/4 -z-10 h-72 w-72 rounded-full bg-blue-600/10 blur-[100px]" />
-
       <div className="pointer-events-none absolute -right-20 bottom-10 -z-10 h-80 w-80 rounded-full bg-violet-600/10 blur-[110px]" />
 
       <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-14 md:grid-cols-2 md:gap-10 lg:gap-16">
-
         {/* Left: Introduction */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -28,31 +26,31 @@ export default function Hero() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-400" />
             </span>
 
-            <span className="text-sm font-medium tracking-wide text-blue-300">
+            <span className="text-sm font-medium tracking-wide text-blue-700 dark:text-blue-300">
               Software Engineering Student
             </span>
           </div>
 
-          <p className="mb-3 text-lg font-medium text-gray-400">
+          <p className="mb-3 text-lg font-medium text-slate-600 dark:text-gray-400">
             Hello, I'm
           </p>
 
-          <h1 className="mb-6 text-4xl font-extrabold leading-[1.12] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="mb-6 text-4xl font-extrabold leading-[1.12] tracking-tight text-slate-950 dark:text-white sm:text-5xl lg:text-6xl xl:text-7xl">
             Roysmith
-            <span className="mt-1 block bg-gradient-to-r from-blue-400 via-sky-300 to-violet-400 bg-clip-text text-transparent">
+            <span className="mt-1 block bg-gradient-to-r from-blue-500 via-sky-400 to-violet-500 bg-clip-text text-transparent dark:from-blue-400 dark:via-sky-300 dark:to-violet-400">
               Bukamu.
             </span>
           </h1>
 
-          <h2 className="mb-6 text-lg font-semibold leading-relaxed text-gray-200 sm:text-xl lg:text-2xl">
+          <h2 className="mb-6 text-lg font-semibold leading-relaxed text-slate-800 dark:text-gray-200 sm:text-xl lg:text-2xl">
             Software Developer
-            <span className="text-blue-400"> · </span>
+            <span className="text-blue-500 dark:text-blue-400"> · </span>
             AI Enthusiast
-            <span className="text-blue-400"> · </span>
+            <span className="text-blue-500 dark:text-blue-400"> · </span>
             Problem Solver
           </h2>
 
-          <p className="mx-auto mb-8 max-w-xl text-base leading-8 text-gray-400 sm:text-lg md:mx-0">
+          <p className="mx-auto mb-8 max-w-xl text-base leading-8 text-slate-600 dark:text-gray-400 sm:text-lg md:mx-0">
             I build modern web experiences, explore AI-powered ideas, and turn
             concepts into practical digital solutions. I'm constantly learning,
             experimenting, and sharpening my skills to create technology that
@@ -61,11 +59,11 @@ export default function Hero() {
 
           {/* Areas of interest */}
           <div className="mb-9 flex flex-wrap justify-center gap-3 md:justify-start">
-            <span className="rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-gray-300">
+            <span className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm transition-colors dark:border-white/10 dark:bg-white/[0.04] dark:text-gray-300">
               Web Development
             </span>
 
-            <span className="rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-gray-300">
+            <span className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm transition-colors dark:border-white/10 dark:bg-white/[0.04] dark:text-gray-300">
               Artificial Intelligence
             </span>
           </div>
@@ -84,9 +82,9 @@ export default function Hero() {
               href="/CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border border-white/15 bg-white/[0.03] px-6 py-3 font-semibold text-gray-200 transition duration-300 hover:-translate-y-1 hover:border-blue-400/60 hover:bg-blue-500/[0.08] hover:text-white"
+              className="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-800 transition duration-300 hover:-translate-y-1 hover:border-blue-400 hover:bg-blue-50 hover:text-blue-700 dark:border-white/15 dark:bg-white/[0.03] dark:text-gray-200 dark:hover:border-blue-400/60 dark:hover:bg-blue-500/[0.08] dark:hover:text-white"
             >
-              <FaDownload className="text-blue-400" />
+              <FaDownload className="text-blue-600 dark:text-blue-400" />
               View My CV
             </a>
           </div>
@@ -100,18 +98,16 @@ export default function Hero() {
           className="order-1 flex justify-center md:order-2"
         >
           <div className="relative mx-auto w-full max-w-[260px] sm:max-w-[320px] lg:max-w-[380px]">
-
             {/* Outer glow */}
             <div className="absolute inset-5 rounded-full bg-blue-500/20 blur-3xl" />
 
             {/* Decorative rings */}
-            <div className="absolute -inset-3 rounded-full border border-blue-400/20" />
-
-            <div className="absolute -inset-6 rounded-full border border-violet-400/10" />
+            <div className="absolute -inset-3 rounded-full border border-blue-400/30 dark:border-blue-400/20" />
+            <div className="absolute -inset-6 rounded-full border border-violet-400/20 dark:border-violet-400/10" />
 
             {/* Image frame */}
             <div className="relative aspect-square rounded-full bg-gradient-to-br from-blue-400 via-blue-600 to-violet-600 p-[3px] shadow-[0_0_60px_rgba(59,130,246,0.2)]">
-              <div className="h-full w-full overflow-hidden rounded-full bg-gray-950 p-2">
+              <div className="h-full w-full overflow-hidden rounded-full bg-white p-2 dark:bg-gray-950">
                 <img
                   src="/profile.jpeg"
                   alt="Portrait of Roysmith Bukamu"
@@ -120,10 +116,8 @@ export default function Hero() {
                 />
               </div>
             </div>
-
           </div>
         </motion.div>
-
       </div>
     </section>
   );
